@@ -1,0 +1,70 @@
+:host {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+main {
+  flex: 1 0 auto !important;
+  margin: 16px;
+}
+
+.subjects-sidenav-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+}
+
+.subjects-sidenav {
+  border-radius: 0px;
+}
+
+.subjects-sidenav-content {
+  padding: 1em;
+}
+
+.btn-compute-score {
+  margin-top: 16px;
+}
+
+.score-good {
+  background-color: #4caf50 !important;
+  color: white !important;
+}
+
+.score-medium {
+  background-color: #fbc02d !important;
+  color: #212121 !important;
+}
+
+.score-bad {
+  background-color: #f44336 !important;
+  color: white !important;
+}
+
+::ng-deep .mat-mdc-list-item .mdc-list-item__primary-text {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  overflow-wrap: break-word;
+  line-height: 1.4 !important;
+}
+
+::ng-deep .mat-mdc-list-item {
+  height: auto !important;
+  min-height: 48px;
+}
+
+::ng-deep .mat-mdc-list-item .mdc-list-item__content {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+a[mat-list-item].active {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+

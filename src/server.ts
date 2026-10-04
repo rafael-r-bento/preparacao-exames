@@ -6,23 +6,50 @@ import {
 } from '@angular/ssr/node';
 import express from 'express';
 import { join } from 'node:path';
+import { Subject } from './app/features/subjects/subject';
 
 const browserDistFolder = join(import.meta.dirname, '../browser');
 
 const app = express();
+app.use(express.json());
 const angularApp = new AngularNodeAppEngine();
 
-/**
- * Example Express Rest API endpoints can be defined here.
- * Uncomment and define endpoints as necessary.
- *
- * Example:
- * ```ts
- * app.get('/api/{*splat}', (req, res) => {
- *   // Handle API request
- * });
- * ```
- */
+import * as fs from 'fs';
+
+app.get('/api/subjects', (req, res) => {
+  try {
+    const exams = JSON.parse(fs.readFileSync("subjects.json", "utf-8"));
+    res.send(exams);
+  } catch(error: unknown) {
+    if (error instanceof Error) {
+      res.status(500);
+      res.send({ message: error.message});
+    }
+  }
+});
+
+app.patch('/api/subjects', (req, res) => {
+  try {
+    const name = req.body.name;
+    if (name) {
+      const modifications = req.body;
+      const currentSubjects = JSON.parse(fs.readFileSync("subjects.json", "utf-8"));
+      const modifiedIndex = currentSubjects.findIndex((subject: Subject) => subject.name === name);
+      const changedSubject = { ...currentSubjects[modifiedIndex], ...modifications};
+      currentSubjects[modifiedIndex] = changedSubject;
+      fs.writeFileSync("subjects.json", JSON.stringify(currentSubjects, null, 2));
+      res.send({ message: 'Assunto modificado com sucesso' });
+    } else {
+      res.status(422);
+      res.send({ message: 'Nome inválido' });
+    }
+  } catch(error: unknown) {
+    if (error instanceof Error) {
+      res.status(500);
+      res.send({ message: error.message});
+    }
+  }
+});
 
 /**
  * Serve static files from /browser
