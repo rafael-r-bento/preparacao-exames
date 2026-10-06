@@ -35,3 +35,9 @@
 body {
   font-family: 'Poppins', Roboto, "Helvetica Neue", sans-serif;
 }
+
+pre[class*="language-text"] code,
+pre.language-text {
+  line-height: 1.1 !important;
+  font-variant-ligatures: none;
+}

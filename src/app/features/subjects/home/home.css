@@ -7,6 +7,7 @@
 main {
   flex: 1 0 auto !important;
   margin: 16px;
+  padding-bottom: 16px;
 }
 
 .subjects-sidenav-container {
@@ -45,6 +46,11 @@ main {
   color: white !important;
 }
 
+.subjects-nav-list {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
 ::ng-deep .mat-mdc-list-item .mdc-list-item__primary-text {
   white-space: normal !important;
   overflow: visible !important;
@@ -68,3 +74,55 @@ a[mat-list-item].active {
   color: #1976d2;
 }
 
+::ng-deep .mat-mdc-nav-list .mat-mdc-list-item {
+  border-radius: 0 !important;
+}
+
+::ng-deep .mat-mdc-chip-action {
+  cursor: pointer !important;
+}
+
+::ng-deep table {
+  width: 100%;
+  border-spacing: 0;
+  background: #fff;
+}
+
+::ng-deep th {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.6);
+  background: #fafafa;
+  text-align: left;
+}
+
+::ng-deep th,
+::ng-deep td {
+  padding: 0 16px;
+}
+
+::ng-deep th {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+::ng-deep th {
+  height: 56px;
+}
+
+::ng-deep td {
+  padding: 4px 16px;
+}
+
+::ng-deep table:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+::ng-deep :not(pre) > code {
+  display: inline-block;
+  padding: 0 6px 2px;
+  border-radius: 3px;
+  background-color: #ebf1f5;
+  font-family: monospace,monospace;
+  border: 1px solid #dadde3;
+}

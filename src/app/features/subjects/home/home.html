@@ -2,55 +2,63 @@
   <mat-sidenav #sidenav mode="side" opened class="subjects-sidenav"
                [fixedInViewport]="true"
                [fixedBottomGap]="0">
-    <mat-nav-list>
+    <mat-nav-list class="subjects-nav-list">
       @for (subject of subjects(); track subject.name) {
       <a mat-list-item [class.active]="subjectSelected()?.name === subject.name" (click)="setSubjectSelected(subject)">
         <span>{{ subject.name }} &nbsp;</span>
         <mat-chip [class]="getScoreClass(subject.score)">
-          {{ subject.score }}%
+          {{ subject.score | number:'1.0-0' }}%
         </mat-chip>
       </a>
       }
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content class="subjects-sidenav-content">
-    <mat-tab-group>
+    <mat-tab-group
+      [selectedIndex]="selectedIndexTab()"
+      (selectedIndexChange)="selectedIndexTab.set($event)"
+      (selectedTabChange)="verifyQuizFormReset($event)"
+      >
       <mat-tab label="Conteúdo">
         @if (subjectSelected()) {
         <main>
           <markdown
-            [data]="subjectSelectedContent()">
+            katex
+            [data]="subjectSelectedContent()"
+            [disableSanitizer]="true">
           </markdown>
         </main>
         }
       </mat-tab>
       <mat-tab label="Questões">
         <main>
-        @if (subjectSelected()?.questions.length! > 0 && answersFormArray?.length === subjectSelected()?.questions?.length) {
-        <form [formGroup]="quizForm">
-          <div formArrayName="answers">
-            @for (question of subjectSelected()?.questions; let i = $index; track question.exam + question.id) {
-            <div [formGroupName]="i">
-              <p>Questão: {{ question.id }} ({{ question.exam }})</p>
-              <markdown
-                [data]="loadQuestionContent(question.contentFile) | async">
-              </markdown>
-              <mat-radio-group formControlName="answer" aria-label="Select an option">
-                @for (alternative of question.alternatives; track $index) {
-                <mat-radio-button [value]="alternative">{{ alternative }}</mat-radio-button>
-                }
-              </mat-radio-group>
+          @if (subjectSelected()?.questions.length! > 0 && answersFormArray?.length === subjectSelected()?.questions?.length) {
+          <form [formGroup]="quizForm">
+            <div formArrayName="answers">
+              @for (question of subjectSelected()?.questions; let i = $index; track question.exam + question.id) {
+              <div [formGroupName]="i">
+                <p>Questão: {{ question.id }} ({{ question.exam }})</p>
+                <markdown
+                  katex
+                  [data]="loadQuestionContent(question.contentFile) | async"
+                  [disableSanitizer]="true">
+                </markdown>
+                <mat-radio-group formControlName="answer" aria-label="Select an option">
+                  @for (alternative of question.alternatives; track $index) {
+                  <mat-radio-button [value]="alternative">{{ alternative }}</mat-radio-button>
+                  }
+                </mat-radio-group>
+              </div>
+              }
             </div>
-            }
-          </div>
-        </form>
-        <button
-          matButton="outlined"
-          class="btn-compute-score"
-          (click)="computeScore()">
-          Finalizar
-        </button>
-        }
+          </form>
+          }
+          <button
+            matButton="outlined"
+            class="btn-compute-score"
+            (click)="computeScore()">
+            Finalizar
+          </button>
         </main>
       </mat-tab>
     </mat-tab-group>

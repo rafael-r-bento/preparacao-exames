@@ -1,5 +1,5 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
-import { AsyncPipe } from '@angular/common';
+import { AsyncPipe, DecimalPipe } from '@angular/common';
 import {
   FormArray,
   FormControl,
@@ -13,7 +13,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatListModule } from '@angular/material/list';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatTabsModule } from '@angular/material/tabs';
+import { MatTabsModule, MatTabChangeEvent } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { Observable } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
@@ -28,6 +28,7 @@ type AnswerForm = FormGroup<{
 @Component({
   imports: [
     AsyncPipe,
+    DecimalPipe,
     FormsModule,
     MarkdownComponent,
     MatButtonModule,
@@ -49,6 +50,7 @@ export class Home implements OnInit {
   subjectSelected = signal<Subject | null>(null);
   subjectSelectedContent = signal<string | null>(null);
   questionsContent = new Map<string, Observable<string>>();
+  selectedIndexTab = signal(0);
 
   quizForm = new FormGroup(
     {
@@ -116,11 +118,27 @@ export class Home implements OnInit {
         subject.questions.map(question => this.createAnswerForm(question))
       )
     );
+    this.selectedIndexTab.set(0);
   }
 
   computeScore() {
     if (this.quizForm.invalid) {
       this.quizForm.markAllAsTouched();
+      return;
+    }
+
+    if (this.subjectSelected()?.questions.length! == 0) {
+      const dto = {
+        name: this.subjectSelected()?.name,
+        score: 100
+      }
+
+      this.subjectService.setSubject(dto).subscribe((response) => {
+        alert("Pontuação: " + dto.score);
+        this.loadSubjects();
+        this.quizForm.reset();
+      });
+
       return;
     }
 
@@ -152,5 +170,11 @@ export class Home implements OnInit {
     }
 
     return 'score-bad';
+  }
+
+  verifyQuizFormReset(event: MatTabChangeEvent) {
+    if (event.index == 0) {
+      this.quizForm.reset();
+    }
   }
 }
