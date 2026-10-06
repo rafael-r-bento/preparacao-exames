@@ -1,7 +1,7 @@
 # preparacao-exames
 
 Aplicação para administrar seus estudos de forma simples, combinando conteúdo e
-questões, com **score** indicando grau de assimiliação de assunto.
+questões, com **score** indicando grau de assimilação de assunto.
 
 ![](./images/conteudo.webp)
 
