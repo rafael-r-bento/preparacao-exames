@@ -130,3 +130,7 @@ a[mat-list-item].active {
 .btn-compute-score {
   margin: 16px auto 16px auto;
 }
+
+.status-answer {
+  margin-left: 16px;
+}

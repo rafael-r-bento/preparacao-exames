@@ -53,18 +53,34 @@
                   @for (alternative of question.alternatives; track $index) {
                   <mat-radio-button [value]="alternative">{{ alternative }}</mat-radio-button>
                   }
+                  @if (showStatusAnswers()) {
+                  <span class="status-answer">
+                    {{ isAnswerCorrect(i, question.answer) ? '✅' : '❌' }}
+                  </span>
+                  }
                 </mat-radio-group>
               </div>
               }
             </div>
           </form>
           }
+          @if (subjectSelected() && subjectSelectedContent()) {
+          @if (!showStatusAnswers()) {
           <button
             matButton="outlined"
             class="btn-compute-score"
             (click)="computeScore()">
             Finalizar
           </button>
+          } @else {
+          <button
+            matButton="outlined"
+            class="btn-compute-score"
+            (click)="resetQuiz()">
+            Reiniciar
+          </button>
+          }
+          }
         </main>
       </mat-tab>
     </mat-tab-group>

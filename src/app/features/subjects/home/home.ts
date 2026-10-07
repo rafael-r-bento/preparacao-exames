@@ -5,8 +5,7 @@ import {
   FormControl,
   FormGroup,
   FormsModule,
-  ReactiveFormsModule,
-  Validators
+  ReactiveFormsModule
 } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatChipsModule } from '@angular/material/chips';
@@ -51,6 +50,7 @@ export class Home implements OnInit {
   subjectSelectedContent = signal<string | null>(null);
   questionsContent = new Map<string, Observable<string>>();
   selectedIndexTab = signal(0);
+  showStatusAnswers = signal<boolean>(false);
 
   quizForm = new FormGroup(
     {
@@ -66,7 +66,7 @@ export class Home implements OnInit {
     return this.quizForm.get('answers') as FormArray<AnswerForm>;
   }
 
-  createAnswerForm(question: Question): AnswerForm {
+  createAnswerForm(): AnswerForm {
     return new FormGroup({
       answer: new FormControl("", { nonNullable: true }),
     });
@@ -111,13 +111,14 @@ export class Home implements OnInit {
   setSubjectSelected(subject: Subject) {
     this.subjectSelected.set(subject);
     this.loadSubjectContent();
-    this.answersFormArray.clear();
     this.quizForm.setControl(
       'answers',
       new FormArray<AnswerForm>(
-        subject.questions.map(question => this.createAnswerForm(question))
+        subject.questions.map(() => this.createAnswerForm())
       )
     );
+    this.quizForm.enable();
+    this.showStatusAnswers.set(false);
     this.selectedIndexTab.set(0);
   }
 
@@ -127,7 +128,7 @@ export class Home implements OnInit {
       return;
     }
 
-    if (this.subjectSelected()?.questions.length! == 0) {
+    if (this.subjectSelected()?.questions.length! === 0) {
       const dto = {
         name: this.subjectSelected()?.name,
         score: 100
@@ -136,14 +137,15 @@ export class Home implements OnInit {
       this.subjectService.setSubject(dto).subscribe((response) => {
         alert("Pontuação: " + dto.score);
         this.loadSubjects();
-        this.quizForm.reset();
       });
 
       return;
     }
 
+    const questions = this.subjectSelected()?.questions ?? [];
+
     const correctAnswers = this.quizForm?.value?.answers?.filter(
-      (item, index) => item.answer === this.subjectSelected()?.questions[index].answer
+      (item, index) => item.answer === questions[index].answer
     ).length;
 
     if (correctAnswers != undefined) {
@@ -152,10 +154,12 @@ export class Home implements OnInit {
         score: correctAnswers / this.subjectSelected()?.questions.length! * 100
       }
 
+      this.quizForm.disable();
+      this.showStatusAnswers.set(true);
+
       this.subjectService.setSubject(dto).subscribe((response) => {
         alert("Pontuação: " + dto.score);
         this.loadSubjects();
-        this.quizForm.reset();
       });
     }
   }
@@ -172,9 +176,9 @@ export class Home implements OnInit {
     return 'score-bad';
   }
 
-  verifyQuizFormReset(event: MatTabChangeEvent) {
-    if (event.index == 0) {
-      this.quizForm.reset();
+  verifyQuizFormReset(event: MatTabChangeEvent): void {
+    if (event.index === 1) {
+      this.resetQuiz();
     }
   }
 
@@ -183,5 +187,15 @@ export class Home implements OnInit {
       top: 0,
       behavior: 'smooth'
     });
+  }
+
+  resetQuiz(): void {
+    this.quizForm.reset();
+    this.quizForm.enable();
+    this.showStatusAnswers.set(false);
+  }
+
+  isAnswerCorrect(index: number, correctAnswer: string): boolean {
+    return this.answersFormArray.at(index).controls.answer.value === correctAnswer;
   }
 }
