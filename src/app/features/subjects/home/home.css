@@ -7,7 +7,6 @@
 main {
   flex: 1 0 auto !important;
   margin: 16px;
-  padding-bottom: 16px;
 }
 
 .subjects-sidenav-container {
@@ -25,10 +24,6 @@ main {
 
 .subjects-sidenav-content {
   padding: 1em;
-}
-
-.btn-compute-score {
-  margin-top: 16px;
 }
 
 .score-good {
@@ -125,4 +120,13 @@ a[mat-list-item].active {
   background-color: #ebf1f5;
   font-family: monospace,monospace;
   border: 1px solid #dadde3;
+}
+
+.btn-back-to-top {
+  display: block;
+  margin: 0px 16px 32px auto;
+}
+
+.btn-compute-score {
+  margin: 16px auto 16px auto;
 }

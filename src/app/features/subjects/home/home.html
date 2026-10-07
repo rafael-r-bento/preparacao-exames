@@ -13,7 +13,7 @@
       }
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content class="subjects-sidenav-content">
+  <mat-sidenav-content id="sidenav-content" class="subjects-sidenav-content">
     <mat-tab-group
       [selectedIndex]="selectedIndexTab()"
       (selectedIndexChange)="selectedIndexTab.set($event)"
@@ -28,6 +28,12 @@
             [disableSanitizer]="true">
           </markdown>
         </main>
+        <button
+          matButton="outlined"
+          class="btn-back-to-top"
+          (click)="scrollToTop()">
+          Voltar ao topo
+        </button>
         }
       </mat-tab>
       <mat-tab label="Questões">

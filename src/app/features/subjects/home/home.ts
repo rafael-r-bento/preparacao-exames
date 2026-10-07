@@ -177,4 +177,11 @@ export class Home implements OnInit {
       this.quizForm.reset();
     }
   }
+
+  scrollToTop(): void {
+    document.getElementById('sidenav-content')?.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
 }
