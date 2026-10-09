@@ -16,9 +16,11 @@ const angularApp = new AngularNodeAppEngine();
 
 import * as fs from 'fs';
 
+const subjectsFileName = "subjects.json";
+
 app.get('/api/subjects', (req, res) => {
   try {
-    const exams = JSON.parse(fs.readFileSync("subjects.json", "utf-8"));
+    const exams = JSON.parse(fs.readFileSync(subjectsFileName, "utf-8"));
     res.send(exams);
   } catch(error: unknown) {
     if (error instanceof Error) {
@@ -33,11 +35,11 @@ app.patch('/api/subjects', (req, res) => {
     const name = req.body.name;
     if (name) {
       const modifications = req.body;
-      const currentSubjects = JSON.parse(fs.readFileSync("subjects.json", "utf-8"));
+      const currentSubjects = JSON.parse(fs.readFileSync(subjectsFileName, "utf-8"));
       const modifiedIndex = currentSubjects.findIndex((subject: Subject) => subject.name === name);
       const changedSubject = { ...currentSubjects[modifiedIndex], ...modifications};
       currentSubjects[modifiedIndex] = changedSubject;
-      fs.writeFileSync("subjects.json", JSON.stringify(currentSubjects, null, 2));
+      fs.writeFileSync(subjectsFileName, JSON.stringify(currentSubjects, null, 2));
       res.send({ message: 'Assunto modificado com sucesso' });
     } else {
       res.status(422);
