@@ -7,17 +7,7 @@
       {
         "exam": "PETROBRAS 2021",
         "id": "9",
-        "contentFile": "questions/PETROBRAS/9",
-        "alternatives": [
-          "C",
-          "E"
-        ],
-        "answer": "C"
-      },
-      {
-        "exam": "PETROBRAS 2021",
-        "id": "10",
-        "contentFile": "questions/PETROBRAS/9",
+        "contentFile": "questions/PETROBRAS_2021/009",
         "alternatives": [
           "C",
           "E"
@@ -34,7 +24,7 @@
       {
         "exam": "PETROBRAS 2021",
         "id": "9",
-        "contentFile": "questions/PETROBRAS/9",
+        "contentFile": "questions/PETROBRAS_2021/009",
         "alternatives": [
           "C",
           "E"

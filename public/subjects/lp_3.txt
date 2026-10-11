@@ -1,0 +1,603 @@
+6 Ortografia Oficial
+════════════════════
+
+        ┌──┬────────────────────────────────────────────────────────────────────────┐
+        │1 │notações léxicas: acentos (´, ^, `), ~, ', cedilha e hífen.             │
+        │2 │                                                                        │
+        │3 │Emprego do hífen:                                                       │
+        │4 │ ├─***(VOGAL)(CONSOANTE)***                                             │
+        │5 │ ├─***VOGAL(rr | ss)***                                                 │
+        │6 │ ├─***(VOGAL)(OUTRA_VOGAL)***                                           │
+        │7 │ ├─***(VOGAL)-(MESMA_VOGAL)***        exceções: prefixos "re", "co"     │
+        │8 │ ├─palavra composta, quando justaposição, com hífen                     │
+        │9 │ ├─palavra composta, quando noção de composição se perdeu, sem hífen    │
+        │10│ ├─VERBO-PRON_OBLIQUO                                                   │
+        │11│ ├─SUBST-SUBST_FORMA/FINALIDADE/TIPO                                    │
+        │12│ ├─***-h***                                                             │
+        │13│ ├─(hiper | inter | super)-(h | r)***                                   │
+        │14│ ├─(bem | mal)-(VOGAL | h)***  obs: formando sentido único              │
+        │15│ ├─(circum | pan)-(VOGAL | h | m | n)***                                │
+        │16│ ├─sub-(b | h | r)***                                                   │
+        │17│ └─(além|aquém|recém|sem|ex|pós|pré|pró|sota|soto|vice|vizo)-***        │
+        └──┴────────────────────────────────────────────────────────────────────────┘
+
+
+6.1 Letra e alfabeto (✓)
+────────────────────────
+
+  O alfabeto português é hoje composto por 26 letras, sendo 21
+  consoantes e 5 vogais. São elas:
+
+        a  A  (á)             j  J  (jota)           s  S  (esse)
+        b  B  (bê)            k  K  (capa ou cá)     t  T  (tê)
+        c  C  (cê)            l  L  (ele)            u  U  (u)
+        d  D  (dê)            m  M  (eme)            v  V  (vê)
+        e  E  (é)             n  N  (ene)            w  W  (dáblio)
+        f  F  (efe)           o  O  (ó)              x  X  (xis)
+        g  G  (gê ou guê)     p  P  (pê)             y  Y  (ípsilon)
+        h  H  (agá)           q  Q  (quê)            z  Z  (zê)
+        i  I  (i)             r  R  (erre)
+
+
+6.2 Notações léxicas
+────────────────────
+
+  /Notações léxicas/ → Conjunto de sinais auxiliares da língua portugesa
+  usados para indicar alguns fonemas especiais. Esses sinais acessórios
+  da escrita são: acentos (agudo, circunflexo e grave), til, apóstrofo,
+  cedilha e hífen.
+
+
+6.2.1 Acentos (✓)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  /Acentos/ são notações léxicas empregadas sobre algumas vogais para
+  indicar a sílaba tônica ou para indicar a fusão entre elas.
+
+  Tipos de acentos na língua portuguesa:
+  • agudo (´): o acento agudo é empregado sobre as vogais para
+    assinalar, quando as regras de acentuação assim exigirem, a
+    tonicidade aberta das vogais "a, e, o" e a tonicidade fechada das
+    vogais "i, u".
+    ┌────
+    │ Exemplos:   água       café       paletó       difícil       baú
+    └────
+  • circunflexo (^): o acento circunflexo é usado sobre as vogais "a, e,
+    o", quando as regras de acentuação exigirem, para indicar o timbre
+    fechado delas.
+    ┌────
+    │ Exemplos:
+    │     quilômetro    cortês    repô-lo    britânico    constância    prêmio
+    └────
+  • grave (`): o acento grave é usado exclusivamente em português para
+    indicar o fenômeno da crase, isto é, a contração/fusão de duas
+    letras "a" (a + a).
+    ┌────
+    │ Exemplos: 
+    │    Um dia chegaremos àquela região.     Iremos todos à casa da tia Zuleide.
+    │                      ------                          -
+    │                     a + aquela                     a + a
+    └────
+
+
+6.2.2 Til (✓)
+╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  /Til/ é uma notação léxica usada para indicar a nasalização das vogais
+  "a, o", quando hover necessidade.
+
+  ┌────
+  │ Exemplos:
+  │     órgão     não     intenção     imã     põe     mãe
+  └────
+
+
+6.2.3 Cedilha (✓)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  /Cedilha/ é uma notação léxica colocada sob a letra "c", a fim de se
+  obter o fonema /s/ antes das vogais "a, o, u".
+
+  ┌────
+  │ Exemplos:
+  │     faço     caçar     mulçumano     açúcar     paçoca     espaço
+  └────
+
+
+6.2.4 Apóstrofo (✓)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  /Apóstrofo/ é um sinal empregado para assinalar a supressão de um
+  fonema numa palavra, a fim de se evitarem sons desagradáveis ou mesmo
+  a repetição de um fonema ao se pronunciar o vocábulo. Geralmente
+  ocorre a elisão do "e" e da preposição "de".
+
+  ┌────
+  │ Exemplos:
+  │     queda d'água     pau-d'arara        galinha-d'água     copo-d'água
+  │     pau-d'água       estrela-d'alva     mãe-d'água         borda-d'água
+  │     pau-d'arco       pau-d'óleo
+  └────
+
+  Observação: emprega-se também o apóstrofo nas ligações das formas
+  "santo" e "santa", quando importa representar a elisão das vogais
+  finais "o" e "a".
+
+  ┌────
+  │ Exemplos:
+  │     Sant'Ana       Sant'Iago       Sant'Antônio
+  └────
+
+
+6.2.5 Hífen (✓)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  /Hífen/ é a notação léxica que apresenta maior número de empregos. É
+  frequentemente empregada para unir palavras compostas, prefixos e
+  formas verbais.
+
+  Principais empregos do hífen:
+  • Para indicar a ênclise dos pronomes oblíquos átonos às formas
+    verbais.
+    ┌────
+    │ Exemplos: Entregou-me. Hei de comprá-lo. Passou-nos o projeto.
+    └────
+  • Em vocábulos compostos, formados por "substantivo + substantivo",
+    nos quais o segundo substantivo indique forma, finalidade ou tipo.
+    ┌────
+    │ Exemplos:
+    │     decreto-lei       ideia-mãe         café-concerto
+    └────
+  • Nas palavras compostas por justaposição que não contêm formas de
+    ligação e cujos elementos constituem uma unidade sintagmática e
+    semântica única e mantém acento próprio.
+    ┌────
+    │ Exemplos: decreto-lei   médico-cirurgião   tenente-coronel   ano-luz
+    └────
+  • Nos topônimos compostos iniciados pelos adjetivos "grã-, grão-" ou
+    por forma verbal ou cujos elementos estejam ligados por artigo.
+    ┌────
+    │ Exemplos: Grã-Bretanha   Abre-Campo   Trinca-Fortes
+    └────
+  • Nas palavras compostas que designam espécies botânicas e zoológicas,
+    estejam ou não ligadas por preposição ou qualquer outro elemento.
+    ┌────
+    │ Exemplos: couve-flor   erva-doce   feijão-verde
+    └────
+  • Nos compostos com os advérbios "bem" e "mal", quando estes formam
+    com o elemento que se lhes segue uma unidade sintagmática e
+    semântica, e tal elemento começa por vogal ou "h".
+    ┌────
+    │ Exemplos: bem-aventurado   bem-estar   mal-humorado
+    └────
+
+  Nas formações com prefixos ou falsos prefixos só se emprega o hífen
+  nos seguintes casos:
+  • Nas formações em que o segundo elemento começa por "h", ou seja, não
+    importa o prefixo: se o segundo elemento iniciar-se por "h", deve-se
+    empregar o hífen.
+    ┌────
+    │ Exemplos: pré-história   extra-humano   sub-hepático
+    └────
+  • Nas formações em que o prefixo termina na mesma vogal com que se
+    inicia o segundo elemento.
+    ┌────
+    │ Exemplos: micro-ondas   contra-almirante   infra-axilar
+    └────
+    Observação 1: esta regra não se aplica ao prefixo "re-".
+    ┌────
+    │ Exemplos: reencarnação, reenvio, reemisão etc.
+    └────
+    Observação 2: Nas formações com o prefixo "co" há aglutinação com o
+    segundo elemento.
+    ┌────
+    │ Exemplos: coobrigação, coocupante, cooperar, cooperação, coordenar.
+    └────
+  • Nas formações com os prefixos "circum-" e "pan-", quando o segundo
+    elemento começa por vogal, "m" ou "n", além do "h" já mencionado.
+    ┌────
+    │ Exemplos: circum-escolar   circum-murado   pan-africano
+    └────
+  • Nas formações com os prefixos "hiper-, inter-, super-", quando o
+    segundo elemento iniciar-se por "r", além, é óbvio, do "h" já
+    mencionado.
+    ┌────
+    │ Exemplos: super-resistente   hiper-reativo   inter-relacionado
+    └────
+  • Nas formações com os prefixos "além-, aquém-, recém-, sem-, ex-,
+    pós-, pré-, pró-, sota-, soto-, vice-, vizo-", isto é, esses
+    prefixos sempre serão usados com hífen.
+    ┌────
+    │ Exemplos: ex-diretor   pró-labore   sota-piloto   soto-mestre   além-mar
+    └────
+  • Com o prefixo "sub-", haverá hífen sempre que o vocábulo do segundo
+    elemento iniciar-se por "b, h ou r".
+    ┌────
+    │ Exemplos: sub-base   sub-humano   sub-rotina
+    └────
+
+  Não se emprega o hífen:
+  • nos vocábulos derivados por prefixação, cujo prefixo terminar em
+    vogal e o segundo elemento iniciar-se por consoante.
+    Caso o segundo elemento inicie por "r" ou "s", estas consoantes
+    devem ser duplicadas.
+    ┌────
+    │ Exemplos: contrarregra   infrassom   suprassumo
+    └────
+  • nos vocábulos derivados por prefixação, cuja vogal final do prefixo
+    é diferente da vogal inicial do segundo elemento.
+    ┌────
+    │ Exemplos: antieconômico   extraoficial   ensinoaprendizagem
+    └────
+  • nos vocábulos formados por palavras compostas, cuja noção de
+    composição, em certa medida, se perdeu, uma vez que tais palavras
+    passaram a compor um sentido único, individualizado.
+    ┌────
+    │ Exemplos: paraquedas   mandachuva   girassol
+    └────
+
+
+6.3 Orientações ortográficas
+────────────────────────────
+
+6.3.1 Emprego das letras "e" e "i" (✓)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  Verbos terminados em *uar*: usa-se o "e" na conjugação.
+
+  ┌────
+  │ Exemplos:
+  │     efetuar -> efetue
+  │    habituar -> habitue
+  │   tumultuar -> tumultue
+  └────
+
+  Verbos terminados em *uir* e *air*: usa-se o "i" na conjugação.
+
+  ┌────
+  │ Exemplos:
+  │      possuir -> possui
+  │   distribuir -> distribui
+  │       atrair -> atrai
+  │         sair -> sai
+  └────
+
+
+6.3.2 Emprego das letras "o" e "u" (✓)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  Verbos terminados em *oer*: usa-se o "ói" na conjugação.
+
+  ┌────
+  │ Exemplos:
+  │      moer -> mói
+  │      doer -> dói
+  │   corroer -> corrói
+  └────
+
+
+6.3.3 Emprego das letras "c" e "ç" (✓)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  Empregam-se o *c* e *ç*: (1) depois de ditongos; (2) em palavras de
+  origem árabe, tupi ou africana; (3) em formas correlatas de palavras
+  terminadas com *to* ou *ter*; (4) nos sufixos *ação*, *aço(a)* e
+  *iço(a)*.
+
+  ┌────
+  │ Exemplos (1): eleição, traição, coice, ouço.
+  │ 
+  │ Exemplos (2): cetim (árabe), muçulmano (árabe), araçá (tupi), paçoca (tupi),
+  │ caçula (africana), miçanga (africana).
+  │ 
+  │ Exemplos (3): ereto -> ereção, correto -> correção, deter -> detenção.
+  │ 
+  │ Exemplos (4): aspiração, pontuação, ricaço, balaço, barcaça, barbaça, sumiço,
+  │ carniça.
+  └────
+
+
+6.3.4 Emprego das letras "g" e "j" (✓)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  Se a palavra base é escrita com *j* suas derivações também serão.
+
+  ┌────
+  │ Exemplos:
+  │    canja -> canjica
+  │     loja -> lojista
+  │   cereja -> cerejeira
+  │    gorja -> gorjeta
+  └────
+
+  Todas as formas verbais dos verbos que são escritos com *j*, mantém-se
+  o *j*.
+
+  ┌────
+  │ Exemplos:
+  │   viajar - viajei, viajem, viajemos, etc.
+  │   arejar - arejem, arejei, areje, etc.
+  │   enferrujar - enferrujou, enferrujem, etc.
+  └────
+
+  Todas as palavras terminadas em *ágio*, *égio*, *ígio*, *ógio* e
+  *úgio* são escritas com *g*.
+
+  ┌────
+  │ Exemplos: adágio, privilégio, vestígio, necrológio, subterfúgio.
+  └────
+
+  São escritas com *g* as palavras terminadas em *gem*.
+
+  ┌────
+  │ Exemplos: estiagem, fuligem, ferrugem, margem.
+  │ Exceções: pajem, lajem, lambujem.
+  └────
+
+
+6.3.5 Emprego da letra "h" (✓)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  A letra *h* não possui valor fonético em nossa língua.
+
+  Emprega-se a letra *h*: (1) no início de certas palavras, devido à
+  etimologia; (2) na formação dos dígrafos *ch*, *lh* e *nh*; (3) nos
+  compostos unidos por hífen; (4) no substantivo próprio *Bahia* devido
+  à secular tradição; (5) no início ou no final de algumas interjeições.
+
+  ┌────
+  │ Exemplos (1): hoje (origem latina: hodie), horizonte (origem grega: horizon).
+  │ 
+  │ Exemplos (2): chapéu, palha, ninho.
+  │ 
+  │ Exemplos (3): sobre-humano, anti-higiênico.
+  │ 
+  │ Exemplos (5): ih!, ah!, oh!, hem?.
+  └────
+
+
+6.3.6 Emprego da letra "s" (✓)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  Escrevem-se com *s* palavras que indicam nacionalidade, origem ou
+  permanência.
+
+  ┌────
+  │ Exemplos:
+  │   Meu primo nasceu na França.
+  │   Meu primo é francês.
+  │               ------=
+  └────
+
+  Escrevem-se com *s* palavras que indicam o gênero feminino.
+
+  ┌────
+  │ Exemplos:
+  │   Ele é profeta.
+  │   Ela é profetisa.
+  │                =
+  └────
+
+  Depois do ditongo geralmente emprega-se *s* ou *x*.
+
+  ┌────
+  │ Exemplos com s: faisão, maisena.
+  │ Exemplos com x: faixa, trouxa, rouxinol, gueixa.
+  │ Exceções: recauchutar.
+  └────
+
+
+6.3.7 Emprego do dígrafo "ss" (✓)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  Emprega-se *ss*: (1) nos substantivos relacionados a verbos com o
+  radical *ced*; (2) nos substantivos relacionados a verbos com o
+  radical *met*; (3) nos substantivos relacionados a verbos com a
+  terminação *tir*; (4) nos substantivos relacionados a verbos com o
+  radical *prim*; (5) nos substantivos relacionados a verbos com o
+  radical *gred*.
+
+  ┌────
+  │ Exemplo (1): a*ced*er -> ace*ss*o, *ced*er -> ce*ss*ão
+  │ 
+  │ Exemplo (2): sub*met*er -> submi*ss*ão, intro*met*er -> intromi*ss*ão
+  │ 
+  │ Exemplo (3): permi*tir* -> perm*ss*ão, discu*tir* -> discu*ss*ão
+  │ 
+  │ Exemplo (4): re*prim*ir -> repre*ss*ão, com*prim*ir -> compre*ss*ão
+  │ 
+  │ Exemplo (5): a*gred*ir -> agre*ss*ão, re*gred*ir -> regre*ss*ão
+  └────
+
+
+6.3.8 Emprego do "sc" (✓)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  Em muitos vocábulos, principalmente por razões etimológicas,
+  emprega-se *sc*.  Geralmente são vocábulos eruditos, provenientes do
+  latim.
+
+  ┌────
+  │ Exemplos: abscesso, incandescente, irascível, visceral.
+  └────
+
+
+6.3.9 Emprego da letra "z" (✓)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  São escritos com *z* as palavras que derivam de adjetivos para formar
+  substantivos abstratos.
+
+  ┌────
+  │ Exemplo:
+  │   O carro é rápido.
+  │   O carro tem rapidez.
+  │                     =
+  └────
+
+  São escritos com *s* os verbos derivados de palavras que tem *s* na
+  última sílaba.
+
+  ┌────
+  │ Exemplos:
+  │   Aviso -> Avisar
+  │   Análise -> Analisar
+  └────
+
+  São escritos com *z* os verbos formados de palavras que não têm *s* na
+  última sílaba.
+
+  ┌────
+  │ Exemplos: 
+  │   Canal -> Canalizar
+  │   Setor -> Setorizar
+  │   Trauma -> Traumatizar
+  └────
+
+  Nas diversas formas dos verbos *querer* e *pôr*, usa-se sempre a letra
+  *s*.
+
+  ┌────
+  │ Exemplos: Pus. Quis. Puser. Quiser. Puseste.
+  └────
+
+
+6.3.10 "-zinho" ou "-sinho" (✓)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  Quando o vocábulo finalizar em *s* ou *z*, para formar o diminutivo
+  acrescenta-se tão somente o sufixo *inho/a*.
+
+  ┌────
+  │ Exemplos:
+  │    raiz + inha -> raizinha
+  │   lápis + inho -> lapisinho
+  └────
+
+  Quando o vocábulo não termina nem em *s* nem em *z*, usa-se a
+  consoante de ligação *z* entre o vocábulo e o sufixo indicador do
+  diminutivo.
+
+  ┌────
+  │ Exemplos:
+  │   amor + z + inho -> amorzinho
+  │   café + z + inho -> cafezinho
+  │    mão + z + inha -> mãozinha
+  └────
+
+  Com certos vocábulos, admitem-se duas grafias para o diminutivo.
+
+  ┌────
+  │ Exemplos:
+  │   colherzinha ou colherinha
+  │   gavetinha ou gavetazinha
+  └────
+
+
+6.3.11 Emprego da letra "x" (✓)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  Quando se tem a palavra base iniciada pela sílaba *en* emprega-se *x*.
+
+  ┌────
+  │ Exemplos: enxoval, enxuto, enxotar.
+  └────
+
+  Observação: os verbos encher (deriva de cheio) e encharcar, assim como
+  seus derivados, escrevem-se com *ch*.
+
+  Quando se tem a palavra iniciada por *me* emprega-se *x*.
+
+  ┌────
+  │ Exemplos: mexer, mexerico, México, mexilhão.
+  └────
+
+  Observação: A palavra mecha e seus derivados escrevem-se com *ch*.
+
+
+6.3.12 Emprego do dígrafo "ch"
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  Palavras formadas a partir de palavras grafadas com *ch* se mantém o
+  *ch*.
+
+  ┌────
+  │ Exemplos: 
+  │   encharcar -> charco
+  │   enchiqueirar -> chiqueiro 
+  └────
+
+
+6.3.13 Emprego da letra maiúscula e da minúscula (✓)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  Emprego da letra maiúscula:
+  • Início de frases, orações ou períodos, versos, citações diretas e
+    logo após o ponto final.
+  • Substantivos próprios de qualquer espécie.
+  • Nomes de festas e festividades.
+  • Nomes que designam a divindade.
+  • Pontos cardeais ou equivalente, quando empregados em referência à
+    região.
+  • Títulos de jornais e periódicos.
+  • Siglas, símbolos ou abreviaturas internacionais ou nacionalmente
+    reguladas com maiúsculas.
+  • Nomes próprios de eras e de acontecimentos históricos, e épocas
+    notáveis.
+  • Nomes de repartições, corporações ou agremiações e estabelecimentos
+    públicos ou particulares.
+
+  Emprego da letra minúscula:
+  • Vocábulos onde não haja a obrigatoriedade da letra maiúscula.
+  • Nomes dos dias, dos meses e das estações do ano.
+  • Pronomes indefinidos "fulano, sicrano e beltrano".
+  • Depois do sinal de dois-pontos quando não se tratar de nome próprio
+    ou de citação direta.
+  • Nomes próprios tomados comuns por sinédoque.
+    ┌────
+    │ Exemplo: Ele foi um *judas* para a turma.
+    └────
+  • Nomes de festas populares ou pagãs.
+
+  Emprego facultativo da letra maiúscula e da minúscula:
+  • Palavras usadas na categorização de logradouros públicos, de templos
+    e de edifífios.
+  • Nomes, adjetivos, pronomes e expressões de tratamento ou reverência.
+  • Nomes que designam domínios do saber, cursos, disciplinas e formas
+    afins.
+  • Títulos que compõem uma citação bibliográfica, exceto no primeiro
+    vocábulo e naqueles obrigatoriamente grafados com maiúscula.
+    ┌────
+    │ Exemplo: O Crime de Padre Amaro ou O crime de padre Amaro.
+    └────
+
+
+6.3.14 Abreviaturas (✓)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  Orientações para escrita de abreviaturas:
+  • As letras são frequentemente substituídas por ponto. Este, por sua
+    vez, geralmente só é colocado após a primeira consoante ou após o
+    primeiro encontro consonantal.
+    ┌────
+    │ Exemplo: adj. (adjetivo).
+    └────
+    Observação: algumas abreviaturas modernas empregam o ponto depois da
+    vogal.
+    ┌────
+    │ Exemplo: memo. (memorando).
+    └────
+  • As abreviaturas de símbolos científicos (medidas, pesos, distâncias
+    etc.) são escritas sem ponto e sem a letra "s" para indicar o
+    plural.
+  • Algumas abreviaturas mantêm a(s) última(s) letra(s) do vocábulo
+    postas acima das outras.
+  • Geralmente, quando se deseja expressar o plural de uma abreviatura,
+    acrescenta-se tão somente a letra *s*.
+  • O acento gráfico, quando houver, deve ser mantido se recair antes do
+    ponto abreviativo.
+    ┌────
+    │ Exemplos:
+    │   séc. (século)
+    │   pág. (página)
+    └────

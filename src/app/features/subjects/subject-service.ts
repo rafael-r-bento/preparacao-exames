@@ -16,6 +16,6 @@ export class SubjectService {
   }
 
   getContent(contentFile: string): Observable<string | null> {
-    return this.http.get(`/${contentFile}.md`, { responseType: 'text' });
+    return this.http.get(`/${contentFile}.txt`, { responseType: 'text' });
   }
 }

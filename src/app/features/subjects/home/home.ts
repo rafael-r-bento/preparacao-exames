@@ -16,7 +16,6 @@ import { MatTabsModule, MatTabChangeEvent } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { Observable } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
-import { MarkdownComponent } from 'ngx-markdown';
 import { SubjectService } from '../subject-service';
 import { Question, Subject } from '../subject';
 
@@ -29,7 +28,6 @@ type AnswerForm = FormGroup<{
     AsyncPipe,
     DecimalPipe,
     FormsModule,
-    MarkdownComponent,
     MatButtonModule,
     MatChipsModule,
     MatListModule,

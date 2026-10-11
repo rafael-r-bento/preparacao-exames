@@ -77,51 +77,6 @@ a[mat-list-item].active {
   cursor: pointer !important;
 }
 
-::ng-deep table {
-  width: 100%;
-  border-spacing: 0;
-  background: #fff;
-}
-
-::ng-deep th {
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: rgba(0, 0, 0, 0.6);
-  background: #fafafa;
-  text-align: left;
-}
-
-::ng-deep th,
-::ng-deep td {
-  padding: 0 16px;
-}
-
-::ng-deep th {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-}
-
-::ng-deep th {
-  height: 56px;
-}
-
-::ng-deep td {
-  padding: 4px 16px;
-}
-
-::ng-deep table:not(:last-child) {
-  margin-bottom: 24px;
-}
-
-::ng-deep :not(pre) > code {
-  display: inline-block;
-  padding: 0 6px 2px;
-  border-radius: 3px;
-  background-color: #ebf1f5;
-  font-family: monospace,monospace;
-  border: 1px solid #dadde3;
-}
-
 .btn-back-to-top {
   display: block;
   margin: 0px 16px 32px auto;
@@ -133,4 +88,9 @@ a[mat-list-item].active {
 
 .status-answer {
   margin-left: 16px;
+}
+
+pre {
+  line-height: 1.1 !important;
+  font-variant-ligatures: none;
 }
