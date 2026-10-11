@@ -9,7 +9,7 @@ if [[ -z "$quantidade" || ! "$quantidade" =~ ^[0-9]+$ ]]; then
 fi
 
 for ((i=1; i<=quantidade; i++)); do
-    printf -v arquivo "%03d.md" "$i"
+    printf -v arquivo "%03d.txt" "$i"
     touch "$arquivo"
 done
 
