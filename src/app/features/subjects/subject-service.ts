@@ -5,7 +5,7 @@ import { Subject } from './subject';
 
 @Service()
 export class SubjectService {
-  private http = inject(HttpClient);
+  private readonly http = inject(HttpClient);
 
   getSubjects() {
     return this.http.get<Subject[]>('/api/subjects');

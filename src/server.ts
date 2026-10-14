@@ -14,7 +14,7 @@ const app = express();
 app.use(express.json());
 const angularApp = new AngularNodeAppEngine();
 
-import * as fs from 'fs';
+import * as fs from 'node:fs';
 
 const subjectsFileName = "subjects.json";
 

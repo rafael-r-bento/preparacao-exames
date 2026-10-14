@@ -17,7 +17,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { Observable } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { SubjectService } from '../subject-service';
-import { Question, Subject } from '../subject';
+import { Subject } from '../subject';
 
 type AnswerForm = FormGroup<{
   answer: FormControl<string>;
@@ -42,7 +42,7 @@ type AnswerForm = FormGroup<{
   templateUrl: './home.html',
 })
 export class Home implements OnInit {
-  private subjectService = inject(SubjectService);
+  private readonly subjectService = inject(SubjectService);
   subjects = signal<Subject[]>([]);
   subjectSelected = signal<Subject | null>(null);
   subjectSelectedContent = signal<string | null>(null);
@@ -126,7 +126,7 @@ export class Home implements OnInit {
       return;
     }
 
-    if (this.subjectSelected()?.questions.length! === 0) {
+    if (this.subjectSelected()?.questions.length === 0) {
       const dto = {
         name: this.subjectSelected()?.name,
         score: 100

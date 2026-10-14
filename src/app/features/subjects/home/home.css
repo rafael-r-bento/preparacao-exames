@@ -28,7 +28,6 @@ main {
 
 .score-good {
   background-color: #4caf50 !important;
-  color: white !important;
 }
 
 .score-medium {
@@ -38,7 +37,6 @@ main {
 
 .score-bad {
   background-color: #f44336 !important;
-  color: white !important;
 }
 
 .subjects-nav-list {
@@ -66,7 +64,6 @@ main {
 
 a[mat-list-item].active {
   background-color: #e3f2fd;
-  color: #1976d2;
 }
 
 ::ng-deep .mat-mdc-nav-list .mat-mdc-list-item {
