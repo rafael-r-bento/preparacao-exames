@@ -46,6 +46,7 @@ export class Home implements OnInit {
   subjects = signal<Subject[]>([]);
   subjectSelected = signal<Subject | null>(null);
   subjectSelectedContent = signal<string | null>(null);
+  announcements = signal<string | null>(null);
   questionsContent = new Map<string, Observable<string>>();
   selectedIndexTab = signal(0);
   showStatusAnswers = signal<boolean>(false);
@@ -58,6 +59,7 @@ export class Home implements OnInit {
 
   ngOnInit() {
     this.loadSubjects();
+    this.loadAnnouncements();
   }
 
   get answersFormArray(): FormArray<AnswerForm> {
@@ -195,5 +197,15 @@ export class Home implements OnInit {
 
   isAnswerCorrect(index: number, correctAnswer: string): boolean {
     return this.answersFormArray.at(index).controls.answer.value === correctAnswer;
+  }
+
+  loadAnnouncements(): void {
+    const contentFile = "announcements";
+    const content = this.subjectService.getContent(contentFile ?? "").subscribe({
+      next: (response) => {
+        this.announcements.set(response);
+      },
+      error: (error) => { console.error('Error fetching subject content', error); }
+    });
   }
 }

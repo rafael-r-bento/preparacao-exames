@@ -30,6 +30,10 @@
           (click)="scrollToTop()">
           Voltar ao topo
         </button>
+        } @else {
+        <main>
+          <pre>{{ announcements() }}</pre>
+        </main>
         }
       </mat-tab>
       <mat-tab label="Questões">
