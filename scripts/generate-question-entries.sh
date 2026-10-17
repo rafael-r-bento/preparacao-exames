@@ -25,12 +25,8 @@ for ((i=1; i<=TOTAL; i++)); do
     "E"
   ],
   "answer": ""
-}
+},
 EOF
-
-  if [ "$i" -lt "$TOTAL" ]; then
-    echo "" >> "$OUTPUT"
-  fi
 done
 
 echo "Arquivo '$OUTPUT' gerado com sucesso!"
